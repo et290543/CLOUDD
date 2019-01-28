@@ -74,6 +74,7 @@ figure {
 /* CSS start */
 
 
+
 body {
 	font-family: 'Nunito','cwTeXHei',"微軟正黑體", sans-serif;
 	background: #fff;
@@ -90,6 +91,177 @@ body {
 	backface-visibility: hidden;
 }
 
+
+/*table start*/
+
+
+
+* {font-family: 'Microsoft JhengHei', sans-serif;}
+
+.rwd-table {
+  margin: auto;
+  min-width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: #428bca;
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+
+.container {
+  display: block;
+  /*text-align: center;*/
+}
+h3 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  /**color: #cecece; **/
+}
+h3:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+h3:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+
+/*
+    Don't look at this last part. It's unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+  .rwd-table tr {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+  }
+  .rwd-table tr:nth-child(odd) {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+  }
+}*/
+
+
+/*table end表格結束*/
+
 .roof-menu ul li.active a:hover,.roof-menu ul li a:hover {
 	opacity: .8
 }
@@ -101,6 +273,9 @@ a {
 	transition: all .2s linear;
 	cursor: grab;
 }
+
+
+
 
 a:hover {
 	color: #a22f30;
@@ -161,12 +336,69 @@ img::selection {
 .section-title strong {
 	color: #3b3a3a;
 	text-align: center;
-	margin-bottom: 5px;
+	margin-bottom: 10px;   /*5px*/
+	margin-top: 45px;
 	text-transform: uppercase;
 	display: block;
-	font-size:2.6rem;
-	letter-spacing :0.2em;
+	font-size:2.2rem;
+	font-weight: bolder;
+	/*letter-spacing :0.1em;*/
 }
+
+.section-title-h1  {
+	color:#ffffff;
+	text-align: center;
+	margin-bottom: -10px;   /*5px*/
+	margin-top: 170px;
+	text-transform: uppercase;
+	display: block;
+	font-size:2.9rem;
+	font-weight: bolder;
+	line-height: 0;
+	
+	
+	/*letter-spacing :0.1em;*/
+} 
+  
+
+/*文字陰影shadow*/
+.section-title-h1 :nth-child(1) {
+	text-shadow: 1px 3px 8px #495057;   /*1px 3px 6px #495057;*/   /*0px 0px 2px #fff*/
+	
+	
+}
+
+.section-title-p1  {
+	color: white;
+    display: block;
+    margin: 40px 0 60px 0;
+    font-size: 1.4rem;  /*1.1*/
+    font-weight: normal;
+    letter-spacing: 0.15em;   /*0.15*/
+    line-height: 2;
+	text-shadow: 1px 1px 2px #666;
+	/*background-color:rgba(0, 160, 234, 0.2);*/
+}
+
+
+
+
+
+
+
+
+
+/*
+color: #df1111;
+    display: block;
+    margin: 40px 0 60px 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+    line-height: 2;
+	
+*/
+
 
 
 .stt1{
@@ -177,10 +409,11 @@ img::selection {
 .section-title span {
 	color: #3b3a3a;
 	display: block;
-	margin: 9px 0 0;
+	margin: 40px 0 60px 0;   /*本來是9px 0 0*/
 	font-size: 1.2rem;
-	font-weight: bold;
+	font-weight: normal;
 	letter-spacing :0.15em;
+	line-height: 2;
 }
 
 
@@ -328,6 +561,15 @@ img::selection {
 	background-position: center center;
 	-moz-background-size: cover;
 	background-size: cover;
+}
+
+#service-block-main-inner{
+	/*background-image: url(../img/backgrounds/se1_bg.jpg); */
+	background-color: #f1f1f1;
+	background-position: center center;
+	-moz-background-size: cover;
+	background-size: cover;
+
 }
 
 .form-group .help-block {
@@ -504,6 +746,45 @@ i:hover {
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out
 }
+
+
+
+
+
+
+
+/*產品banner*/
+
+.banner-1{
+	padding: 200px 0;  /*150*/
+    background-image: url(../img/slider/pp1.jpg);   /*http://lorempixel.com/g/1920/550*/
+    background-size: initial;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+/*公司簡介aboutbanner*/
+
+.about-1{
+	padding: 200px 0;  /*150*/
+    background-image: url(../img/slider/aa1.jpg);   /*http://lorempixel.com/g/1920/550*/
+    background-size: initial;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+.contact-1{
+	padding: 200px 0;  /*150*/
+    background-image: url(../img/slider/cc1.jpg);   /*http://lorempixel.com/g/1920/550*/
+    background-size: initial;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
 
 .page-header {
 	padding: 0;
@@ -711,7 +992,7 @@ i:hover {
 
 .navbar {
 	padding-bottom: 0px;
-	box-shadow:0px 4px 0px rgba(20%,20%,40%,0.6);
+	/*box-shadow:0px 4px 0px rgba(20%,20%,40%,0.6);*/
 }
 
 
@@ -1037,6 +1318,8 @@ img {
 	line-height: 18px;
 }
 
+
+
 #main-menu ul>.dropdown:hover>ul.dropdown-menu {
 	display: block;
 	webkit-animation: MenuFadeIn 400ms;
@@ -1196,7 +1479,7 @@ ul li>ul>li.active>a {
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeInDown;
 	animation-name: fadeInDown;
-	border-bottom-width:2px;
+	border-bottom-width:5px; /*2*/
 	border-bottom-style: solid;
 	border-bottom-color: #00a0e9;
 	
@@ -1285,7 +1568,11 @@ ul li>ul>li.active>a {
 	.slicknav_menu {
 		display: block
 	}
+	
 }
+
+
+
 
 
 
@@ -1312,8 +1599,8 @@ ul li>ul>li.active>a {
 }
 
 
-/*-- 服務介紹 --*/
-.COOPERATION {
+
+.COOPERATIONn {
 	background-color: #f1eeea;
 }
 
@@ -1354,13 +1641,14 @@ ul li>ul>li.active>a {
 }
 
 .service-item h2 {
-	font-size: 24px;
+	font-size: 20.2222222px;
 	transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
-	color:#00a0e9;
-    line-height: 1.0; 
+	color:#00a0e9;  
+	line-height: 1.3; 
+	letter-spacing: 1px;
 }
 
 .service-item p {
@@ -2240,11 +2528,24 @@ ul.nav-tabs li a {
 /*-- 參展照片--*/
 
 #cool-facts {
-background-image: url(../img/backgrounds/se1_bg.jpg);
+    background-image: url(../img/backgrounds/se1_bg.jpg); 
     background-position: center center;
     -moz-background-size: cover;
     background-size: cover;
 }
+
+/*-- 產品第6頁背景--*/
+#cool-facts-inner {
+	   background-color: #fff;
+	   background-position: center center;
+	   -moz-background-size: cover;
+	   background-size: cover;
+	   
+   }
+   
+
+
+
 
 
 @media only screen and (max-width:1440px){
@@ -2648,6 +2949,19 @@ i.icon-lg {
 	margin-top:110px;
 }
 
+
+/*內頁共用 banner*/
+#carousel-area-inner{
+	overflow: hidden;
+	background: #2c3e50;
+	margin-top:110px;    /**/
+
+}
+
+
+
+
+
 @media (max-width: 768px) {
 #carousel-area {
 	margin-top:75px;
@@ -2987,68 +3301,77 @@ i.icon-lg {
 }
 
 .coop_con{
-   width:100%;
+	width:100%;
+ 
+ }
+ 
+ .coop_con table{
+ 
+ 
+ }
+ 
+ .coop_con table tr {
+	 background-color: #f6f6ea;
+	 border-bottom-width: 1px;
+	 border-bottom-style: solid;
+	 border-bottom-color: #dbdbdb;
+ }
+ 
+ .coop_con table tr:nth-child(even) {
+	 background: #f0f0f0
+ }
+ 
+ .coop_con table tr:nth-child(odd) {
+	 background-color: #e7e7e3
+ }
+ 
+ 
+ .coop_con table tr td{
+  padding:1.5%;
+  text-align:center;
+ }
+ 
+ .coop_logo{
+	width:30%;
+	background-color:#fff;
+	 
+ }
+ .coop_wd{
+	width:70%;
+	color:#676057;
+	text-align:left !important;
+	font-size:16px;
+ }
+ 
+ @media (max-width: 768px){
+ .coop_con table tr {
+	 font-size: 0.8rem;
+	 line-height: 1rem;
+	 border: 1px solid #d2d2d2;
+ }	
+ .coop_con table tr td {
+	 display: block;
+ }
+	 
+ .coop_logo{
+	width:100%;
+	 
+ }
+ .coop_wd{
+	width:100%;
+	background-color: #e7e7e3;
+	font-size:14px;
+ }
+ }
 
-}
-
-.coop_con table{
 
 
-}
-
-.coop_con table tr {
-	background-color: #f6f6ea;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #dbdbdb;
-}
-
-.coop_con table tr:nth-child(even) {
-    background: #f0f0f0
-}
-
-.coop_con table tr:nth-child(odd) {
-    background-color: #e7e7e3
-}
 
 
-.coop_con table tr td{
- padding:1.5%;
- text-align:center;
-}
 
-.coop_logo{
-   width:30%;
-   background-color:#fff;
-	
-}
-.coop_wd{
-   width:70%;
-   color:#676057;
-   text-align:left !important;
-   font-size:16px;
-}
 
-@media (max-width: 768px){
-.coop_con table tr {
-	font-size: 0.8rem;
-	line-height: 1rem;
-	border: 1px solid #d2d2d2;
-}	
-.coop_con table tr td {
-	display: block;
-}
-	
-.coop_logo{
-   width:100%;
-	
-}
-.coop_wd{
-   width:100%;
-   background-color: #e7e7e3;
-   font-size:14px;
-}
-}
+
+
 
 /*--------------05 參展照片------------------*/
 #se1 {
@@ -3068,7 +3391,7 @@ i.icon-lg {
 }
 
 .outbtn{
-	width:14.2857%;
+	width:12.5%;
 }
 
 @media (max-width: 992px){

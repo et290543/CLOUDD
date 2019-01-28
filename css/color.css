@@ -298,7 +298,7 @@ h2.widget-title {
 }
 
 #main-menu .nav-link.active {
-	color: #f08200
+	color: #f08200             /*nav滑鼠點擊顏色*/
 }
 
 #main-menu .nav-link:hover {
@@ -317,6 +317,16 @@ h2.widget-title {
 #main-menu ul .dropdown .dropdown-menu a:hover,#main-menu .dropdown .dropdown-menu a .active {
 	color: #f08200;
 }
+
+
+/*自己加上*/
+.dropdown-menu #dropp .active{
+	color: #6d0303;
+}
+
+
+
+
 /*-- end --*/
 
 .top_search_con input:focus {
