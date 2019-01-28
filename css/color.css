@@ -1,0 +1,337 @@
+a {
+	color: #00a0ea
+}
+
+a:hover {
+	color: #00a0ea;
+}
+
+.index_a{
+	font-weight:600;
+	font-size:16px;
+	color: #c83535;
+	text-decoration: underline;
+	z-index:10;
+}
+
+.index_a:hover{
+	color: #6d0303;
+}
+
+.navbar-engage .dropdown .dropdown-menu>li.active>a {
+	color: #00a0ea
+}
+
+.navbar-engage .navbar-nav>li>a:hover,.navbar-engage .navbar-nav>li.active>a,.navbar-engage .navbar-nav>li.open>a,.navbar-engage .navbar-nav>.active>a:hover,.navbar-engage .navbar-nav>.active>a:focus,.navbar-engage .navbar-nav>.open>a:hover {
+	color: #00a0ea
+}
+
+.navbar-engage .navbar-nav>li a:hover::before,.navbar-engage .navbar-nav>li.active a::before,.navbar-engage .navbar-nav>li.open>a::before,.navbar-engage .navbar-nav>.active>a:focus::before {
+	background: #00a0ea
+}
+
+.navbar-engage .dropdown .dropdown-menu {
+	border-color: #00a0ea
+}
+
+#main-menu>li>a:hover,#main-menu>li.active>a,#main-menu>li.open>a,#main-menu>.active>a:hover,#main-menu>.active>a:focus,#main-menu>.open>a:hover {
+	color: #00a0ea
+}
+
+#main-menu .dropdown .dropdown-menu>li.active>a {
+	color: #00a0ea
+}
+
+.open>a {
+	color: #00a0ea!important
+}
+
+.navbar-engage .dropdown .dropdown-menu>li>a:hover,.navbar-engage .dropdown .dropdown-menu>li>a .active {
+	color: #00a0ea
+}
+
+#main-menu .dropdown .dropdown-menu>li>a:hover,#main-menu .dropdown .dropdown-menu>li>a:active {
+	color: #00a0ea
+}
+
+
+.light li a {
+	color: #00a0ea
+}
+
+.flat li a i {
+	background: #00a0ea;
+	border-color: #00a0ea
+}
+
+#tabs .tabs-style-2 .nav-tabs li.active a,#tabs .tabs-style-2 .nav-tabs li.active a:hover,#tabs .tabs-style-2 .nav-tabs li.active a:focus,#tabs .tabs-style-2 .nav-tabs li a:hover {
+	border-color: #00a0ea;
+	background-color: #00a0ea
+}
+
+#tabs .tabs-style-2 .nav-tabs {
+	border-color: #00a0ea
+}
+
+#contact .contact-info-wrapper .contact-item-wrapper i {
+	background: #00a0ea
+}
+
+.preset-bg {
+	background: #00a0ea
+}
+
+.dark-bg {
+	background: rgba(0,0,0,.1)
+}
+
+.btn-danger {
+	background-color: #00a0ea;
+	border-color: #00a0ea
+}
+
+.btn-danger:hover,.btn-danger:active,.btn-danger.active,.open>.dropdown-toggle.btn-danger {
+	background-color: #90bf34;
+	border-color: #90bf34
+}
+
+.page-header .page-header-inner:before {
+	background-color: #90bf34;
+	opacity: .2
+}
+
+.slicknav_btn {
+	border-color: #00a0ea
+}
+
+.slicknav_btn:hover {
+	background: #00a0ea
+}
+
+.slicknav_nav a:hover,.slicknav_open .active {
+	color: #00a0ea
+}
+
+.slicknav_menu .slicknav_icon-bar {
+	background: #00a0ea
+}
+
+.tparrows.preview2:hover:after {
+	color: #00a0ea
+}
+
+#default-tab .nav-tabs>li>a.active,#default-tab .nav-tabs>li a.active:focus,#default-tab .nav-tabs>li a.active:hover {
+	color: #00a0ea
+}
+
+#default-tab ul.nav-tabs>li a.active::before {
+	background-color: #00a0ea
+}
+
+#round-tab ul li a.active {
+	color: #fff;
+	background: #00a0ea;
+	border-radius: 4px
+}
+
+
+#tab-with-icon .nav-tabs li a:hover i,#tab-with-icon .nav-tabs li a:focus,#tab-with-icon .nav-tabs li a.active i {
+	background: #00a0ea none repeat scroll 0 0
+}
+
+.btn-outline {
+	border-color: #00a0ea;
+	color: #00a0ea
+}
+
+.btn-outline:hover {
+	background: #00a0ea
+}
+
+.progress-bar {
+	background: #00a0ea
+}
+
+
+i.icon-default {
+	color: #00a0ea
+}
+
+i.icon-round {
+	background-color: #00a0ea
+}
+
+i.icon-round-border {
+	border: 3px solid #00a0ea;
+	color: #00a0ea
+}
+
+i.icon-box {
+	background-color: #00a0ea
+}
+
+i.icon-box-border {
+	border: 3px solid #00a0ea;
+	color: #00a0ea
+}
+
+
+h2.widget-title {
+	color: #00a0ea
+}
+
+.widget.tag-cloud a {
+	background: #00a0ea
+}
+
+.sidebar-area .search-bar button i.fa {
+	color: #00a0ea
+}
+
+.contact-title-text h2 {
+	color: #00a0ea
+}
+
+.roof-menu ul li.active a {
+	color: #00a0ea
+}
+
+.roof-social-icons a i.fa:hover {
+	background: #00a0ea
+}
+
+.service2-single-service .fa {
+	background: #00a0ea none repeat scroll 0 0
+}
+
+.form-control:focus {
+	border-color: #00a0ea
+}
+
+.btn-common {
+	background:rgba(39,39,38,1) none repeat scroll 0 0;
+	background-image: url(../img/art/bg_line.png);
+	background-repeat: repeat;
+}
+
+.btn-common::before {
+	background: #7aa427 none repeat scroll 0 0
+}
+
+.back-to-top i {
+	background-color: #00a0ea
+}
+
+#carousel-area .carousel-item .carousel-caption {
+	color: #00a0ea
+}
+
+.top_search_icon {
+	color: #00a0ea
+}
+
+#carousel-area .carousel-indicators li:hover,#carousel-area .carousel-indicators li.active {
+	background: #f08200 none repeat scroll 0 0
+}
+
+.service-item .icon-wrapper i {
+	color: #00a0ea
+}
+
+.split .details-list h3 {
+	color: #00a0ea
+}
+
+#other-services .nav-tabs li a:hover i,#other-services .nav-tabs li a:focus,#other-services .nav-tabs li a.active i {
+	background: #00a0ea none repeat scroll 0 0
+}
+
+.btn-common.active {
+	background: #7aa427 none repeat scroll 0 0
+}
+
+.sup-desc-wrap .sup-link .left-link,.sup-desc-wrap .sup-link .right-link {
+	background: #00a0ea none repeat scroll 0 0;
+	border: 1px solid #00a0ea
+}
+
+.featured-box .featured-icon i {
+	color: #00a0ea
+}
+
+#team .team-item figure figcaption .orange-line {
+	background: #00a0ea none repeat scroll 0 0
+}
+
+#team .team-item .social .facebook,#team .team-item .social .twitter,#team .team-item .social .google-plus {
+	background: #00a0ea none repeat scroll 0 0;
+	border: 1px solid #00a0ea
+}
+
+.orange-line {
+	background: #00a0ea none repeat scroll 0 0
+}
+
+#cool-facts .facts-item i {
+	color: #00a0ea
+}
+
+#testimonial .testimonial-inner:hover {
+	border-color: #00a0ea
+}
+
+#blog .blog-item-text .blog-one-footer i {
+	color: #00a0ea
+}
+
+#blog .blog-item-text .blog-one-footer a:hover {
+	color: #00a0ea
+}
+
+.portfolio-meta ul li span {
+	color: #00a0ea
+}
+
+#main-menu ul .dropdown .dropdown-menu .dropdown-item.active,#main-menu ul .dropdown .dropdown-menu .dropdown-item.active:focus,#main-menu ul .dropdown .dropdown-menu .dropdown-item.active:hover {
+	background-color: #4ad9ff;
+	color: #fff
+}
+
+#main-menu .nav-link.active {
+	color: #f08200
+}
+
+#main-menu .nav-link:hover {
+	color: #f08200
+}
+
+.sup-desc-wrap .sup-link a:hover {
+	color: #00a0ea
+}
+
+#team .team-item .social a:hover {
+	color: #00a0ea
+}
+
+/*-- menu 列按鈕顏色 --*/
+#main-menu ul .dropdown .dropdown-menu a:hover,#main-menu .dropdown .dropdown-menu a .active {
+	color: #f08200;
+}
+/*-- end --*/
+
+.top_search_con input:focus {
+	border: 1px solid #00a0ea
+}
+
+footer .image-list .post-content .meta {
+	color: #00a0ea
+}
+
+footer .footer-widget form input:focus {
+	border-color: #00a0ea
+}
+
+.fb_{
+	font-size:1.2rem;
+	color:#00a0e9;
+}
